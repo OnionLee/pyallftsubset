@@ -8,17 +8,17 @@ def get_arg(arg_name, default, req=False):
             if i + 1 < len(sys.argv):
                 return sys.argv[i + 1]
             else:
-                print('pyallftsubset.py --subset_path [required] --input_path [optional] --output_path [optional]')
+                print('pyallftsubset.py --subset_path [required] --input_dir [optional] --output_dir [optional]')
                 exit()
 
     if req:
-        print('pyallftsubset.py --subset_path [required] --input_path [optional] --output_path [optional]')
+        print('pyallftsubset.py --subset_path [required] --input_dir [optional] --output_dir [optional]')
         exit()
     else:
         return default
     
-input_path = get_arg('--input_path', './')
-output_path = get_arg('--output_path', './')
+input_path = get_arg('--input_dir', './')
+output_path = get_arg('--output_dir', './')
 subset = get_arg('--subset_path', '', True)
 
 if not os.path.isfile(subset):
