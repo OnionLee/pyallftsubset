@@ -6,6 +6,6 @@
 </bold></pre></code>
 # Note
 * This script only supports utf-8 text files.
-* This script doesn't support overwrite
+* This script doesn't support overwrite.
 # License
 * [fonttools](https://github.com/fonttools/fonttools/blob/master/LICENSE)
