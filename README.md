@@ -4,5 +4,8 @@
 # Usage
 <pre><code><bold>pyallftsubset.py --subset_path [required] --input_dir [optional] --output_dir [optional]
 </bold></pre></code>
+# Note
+* This script does only support utf-8 text files.
+* This script doesn't support overwrite
 # License
 * [fonttools](https://github.com/fonttools/fonttools/blob/master/LICENSE)
